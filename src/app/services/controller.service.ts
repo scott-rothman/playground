@@ -4,8 +4,8 @@ const UP = 87;
 const DOWN = 83;
 const LEFT = 65;
 const RIGHT = 68;
-const SHOOT_LEFT = 97;
-const SHOOT_RIGHT = 98;
+const SHOOT_LEFT = 37;
+const SHOOT_RIGHT = 39;
 const JUMP = 99;
 
 @Injectable({

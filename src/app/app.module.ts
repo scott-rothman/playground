@@ -6,12 +6,14 @@ import { environment } from '../environments/environment';
 import { AppRoutingModule } from './app-routing.module';
 import { StageComponent } from './stage/stage.component';
 import { CharacterComponent } from './character/character.component';
+import { OtherCharacterComponent } from './other-character/other-character.component';
 
 @NgModule({
   declarations: [
     AppComponent,
     StageComponent,
-    CharacterComponent
+    CharacterComponent,
+    OtherCharacterComponent
   ],
   imports: [
     BrowserModule,

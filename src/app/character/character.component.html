@@ -1,14 +1,19 @@
 <div 
     class="character"
-    [ngStyle]="{'left': strPosX, 'top': strPosY}">
-<div class="character__top">
-  <div class="character__arm character__arm--left"></div>
-  <div class="character__arm character__arm--right"></div>
-</div>
-<div class="character__bottom">
-  <div class="character__flange"></div>
-  <div class="character__flange"></div>
-  <div class="character__flange"></div>
-  <div class="character__flange"></div>
-</div>
+    [ngStyle]="{'left': strPosX, 'top': strPosY}"
+    [attr.data-facing]="facing">
+  <div class="character__top">
+    <div 
+        class="character__arm character__arm--left"
+        [ngStyle]="{'transform': 'rotate(' + leftArmRotation + 'deg)'}"></div>
+    <div class="character__arm character__arm--right"
+        [ngStyle]="{'transform': 'rotate(' + rightArmRotation + 'deg)'}"></div>
+      
+  </div>
+  <div class="character__bottom">
+    <div class="character__flange"></div>
+    <div class="character__flange"></div>
+    <div class="character__flange"></div>
+    <div class="character__flange"></div>
+  </div>
 </div>

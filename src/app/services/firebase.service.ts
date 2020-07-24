@@ -43,9 +43,25 @@ export class FirebaseService {
     return this.db.database.ref(`rooms/${roomID}/characters/${characterID}`).update(data)
   }
 
-  updateCharacterDataActions(roomID, characterID, actions) {
+  updateCharacterDataLAR(roomID, characterID, degrees) {
     const data = {
-      actions: actions
+      leftArmRotation: degrees
+    };
+
+    return this.db.database.ref(`rooms/${roomID}/characters/${characterID}`).update(data)
+  }
+
+  updateCharacterDataRAR(roomID, characterID, degrees) {
+    const data = {
+      rightArmRotation: degrees
+    };
+
+    return this.db.database.ref(`rooms/${roomID}/characters/${characterID}`).update(data)
+  }
+
+  updateCharacterFacing(roomID, characterID, facing) {
+    const data = {
+      facing: facing
     };
 
     return this.db.database.ref(`rooms/${roomID}/characters/${characterID}`).update(data)
