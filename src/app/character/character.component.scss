@@ -37,7 +37,6 @@ $character-accent: #000;
 }
 
 .character__top {
-  background-color: $character-primary;
   border-bottom-left-radius: 30%;
   border-bottom-right-radius: 30%;
   border-top-left-radius: 30%;
@@ -47,6 +46,22 @@ $character-accent: #000;
   top: 0;
   width: 75px;
   z-index: 100;
+
+  &.arm-1 {
+    background-color: #5e729a;
+  }
+
+  &.arm-2 {
+    background-color: #bf0bef;
+  }
+
+  &.arm-3 {
+    background-color: #bf0bef;
+  }
+
+  &.arm-4 {
+    background-color: #b7af1f;
+  }
 }
 
 .character__arm {

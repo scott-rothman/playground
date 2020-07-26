@@ -3,7 +3,9 @@
     [ngStyle]="{'left': strPosX, 'top': strPosY, 'z-index': zIndex}"
     [attr.data-facing]="facing">
   <div class="character-scaler" [ngStyle]="{'transform': 'scale(' + scale + ')'}">
-    <div class="character__top">
+    <div 
+        class="character__top"
+        [class]="'arm-' + armNum">
       <div 
           class="character__arm character__arm--left"
           [class]="'character__arm--arm-' + armNum"
