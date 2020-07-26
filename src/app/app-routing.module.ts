@@ -3,6 +3,7 @@ import { RouterModule, Routes } from '@angular/router';
 import { StageComponent } from './stage/stage.component';
 
 const routes: Routes = [
+  { path: '', component: StageComponent },
   { path: ':roomID', component: StageComponent }
 ];
 

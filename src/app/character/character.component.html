@@ -1,19 +1,31 @@
 <div 
     class="character"
-    [ngStyle]="{'left': strPosX, 'top': strPosY}"
+    [ngStyle]="{'left': strPosX, 'top': strPosY, 'z-index': zIndex}"
     [attr.data-facing]="facing">
-  <div class="character__top">
-    <div 
-        class="character__arm character__arm--left"
-        [ngStyle]="{'transform': 'rotate(' + leftArmRotation + 'deg)'}"></div>
-    <div class="character__arm character__arm--right"
-        [ngStyle]="{'transform': 'rotate(' + rightArmRotation + 'deg)'}"></div>
-      
-  </div>
-  <div class="character__bottom">
-    <div class="character__flange"></div>
-    <div class="character__flange"></div>
-    <div class="character__flange"></div>
-    <div class="character__flange"></div>
+  <div class="character-scaler" [ngStyle]="{'transform': 'scale(' + scale + ')'}">
+    <div class="character__top">
+      <div 
+          class="character__arm character__arm--left"
+          [class]="'character__arm--arm-' + armNum"
+          [ngStyle]="{'transform': 'rotate(' + leftArmRotation + 'deg)'}"></div>
+      <div class="character__arm character__arm--right"
+          [class]="'character__arm--arm-' + armNum"
+          [ngStyle]="{'transform': 'rotate(' + rightArmRotation + 'deg)'}"></div>
+        
+    </div>
+    <div class="character__bottom">
+      <div 
+          class="character__leg"
+          [class]="'character__leg--leg-' + legNum"></div>
+      <div 
+          class="character__leg"
+          [class]="'character__leg--leg-' + legNum"></div>
+      <div 
+          class="character__leg"
+          [class]="'character__leg--leg-' + legNum"></div>
+      <div 
+          class="character__leg"
+          [class]="'character__leg--leg-' + legNum"></div>
+    </div>
   </div>
 </div>

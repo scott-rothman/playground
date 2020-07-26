@@ -1,0 +1,17 @@
+{
+  "hosting": {
+    "site": "srr-playground",
+    "public": "dist/playground",
+    "ignore": [
+      "firebase.json",
+      "**/.*",
+      "**/node_modules/**"
+    ],
+    "rewrites": [
+      {
+        "source": "**",
+        "destination": "/index.html"
+      }
+    ]
+  }
+}

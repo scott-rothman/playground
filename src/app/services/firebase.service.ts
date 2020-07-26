@@ -27,6 +27,22 @@ export class FirebaseService {
     return this.db.database.ref(`rooms/${roomID}/characters/${characterID}`);
   }
 
+  setArmType(roomID, characterID, armNum) {
+    const data = {
+      armNum: armNum
+    };
+
+    return this.db.database.ref(`rooms/${roomID}/characters/${characterID}`).update(data)
+  }
+
+  setLegType(roomID, characterID, legNum) {
+    const data = {
+      legNum: legNum
+    };
+
+    return this.db.database.ref(`rooms/${roomID}/characters/${characterID}`).update(data)
+  }
+
   updateCharacterDataX(roomID, characterID, posX) {
     const data = {
       x: posX

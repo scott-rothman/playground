@@ -38,7 +38,7 @@ export class StageComponent implements OnInit {
       }
     })
 
-    const FRAME_DURATION = (1/60) * 1000;
+    const FRAME_DURATION = (1/15) * 1000;
     const loop = window.setInterval(() => {
       window.requestAnimationFrame(() => {
         if (!this.controller.input.has('L') &&

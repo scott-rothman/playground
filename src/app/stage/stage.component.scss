@@ -1,9 +1,10 @@
 .stage {
-    border: solid #000 1px;
-    height: 1080px;
+    border-bottom: solid #0c9b1d 1000px;
+    border-left: 250px solid transparent;
+    border-right: 250px solid transparent;
     left: 50%;
     position: absolute;
     top: 50%;
     transform: translate(-50%, -50%);
-    width: 1920px;
+    width: 1000px;
 }

@@ -18,6 +18,10 @@ export class OtherCharacterComponent implements OnInit {
   strPosX: string;
   leftArmRotation: number;
   rightArmRotation: number;
+  armNum: number;
+  legNum: number;
+  zIndex: number;
+  scale: number;
 
   constructor(
     private fbService: FirebaseService
@@ -36,6 +40,8 @@ export class OtherCharacterComponent implements OnInit {
         this.facing = charData.facing;
         this.leftArmRotation = charData.leftArmRotation;
         this.rightArmRotation = charData.rightArmRotation;
+        this.armNum = charData.armNum;
+        this.legNum = charData.legNum;
   
         this.strPosX = `${this.posX}px`;
         this.strPosY = `${this.posY}px`;

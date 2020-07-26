@@ -1,0 +1,14 @@
+{
+  "projects": {
+    "default": "srr-portfolio"
+  },
+  "targets": {
+    "srr-portfolio": {
+      "hosting": {
+        "playground": [
+          "srr-playground"
+        ]
+      }
+    }
+  }
+}
