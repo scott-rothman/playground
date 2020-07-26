@@ -45,8 +45,20 @@ export class OtherCharacterComponent implements OnInit {
   
         this.strPosX = `${this.posX}px`;
         this.strPosY = `${this.posY}px`;
+        this.scale = this.getScale();
+
+        this.zIndex = this.posY;
       });
     }
+  }
+
+  getScale() {
+    let curY = this.posY;
+    let percentage = this.posY / 1000;
+    if (curY < 0) {
+      curY = 0;
+    }
+    return (percentage * .5) + .5;
   }
 
 }
