@@ -64,8 +64,6 @@ export class CharacterComponent implements OnInit {
       this.leftArmRotation = charData.leftArmRotation;
       this.rightArmRotation = charData.rightArmRotation;
       
-      this.legNum = charData.legNum;
-
       this.strPosX = `${this.posX}px`;
       this.strPosY = `${this.posY}px`;
       this.scale = this.getScale();
